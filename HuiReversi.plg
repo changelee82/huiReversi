@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HuiReversi - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/HuiReversi.res" /d "_DEBUG" "D:\my\huiReversi\HuiReversi.rc"" 
+Creating temporary file "C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225A.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/HuiReversi.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\my\huiReversi\BoardRightView.cpp"
+"D:\my\huiReversi\BoardView.cpp"
+"D:\my\huiReversi\DlgGetIP.cpp"
+"D:\my\huiReversi\DlgRule.cpp"
+"D:\my\huiReversi\HuiReversi.cpp"
+"D:\my\huiReversi\HuiReversiDoc.cpp"
+"D:\my\huiReversi\huiReversi\HuiReversiGetValue.cpp"
+"D:\my\huiReversi\huiReversi\HuiReversiMain.cpp"
+"D:\my\huiReversi\huiReversi\HuiReversiMove.cpp"
+"D:\my\huiReversi\huiReversi\HuiReversiSearch.cpp"
+"D:\my\huiReversi\HuiReversiView.cpp"
+"D:\my\huiReversi\huiReversi\HuiSearchAlphaBeta.cpp"
+"D:\my\huiReversi\MainFrm.cpp"
+"D:\my\huiReversi\ReversiWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225A.tmp" 
+Creating temporary file "C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/HuiReversi.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\my\huiReversi\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225B.tmp" 
+Creating temporary file "C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Output/HuiReversi.pdb" /debug /machine:I386 /out:"Output/HuiReversi.exe" /pdbtype:sept 
+.\Debug\BoardRightView.obj
+.\Debug\BoardView.obj
+.\Debug\DlgGetIP.obj
+.\Debug\DlgRule.obj
+.\Debug\HuiReversi.obj
+.\Debug\HuiReversiDoc.obj
+.\Debug\HuiReversiGetValue.obj
+.\Debug\HuiReversiMain.obj
+.\Debug\HuiReversiMove.obj
+.\Debug\HuiReversiSearch.obj
+.\Debug\HuiReversiView.obj
+.\Debug\HuiSearchAlphaBeta.obj
+.\Debug\MainFrm.obj
+.\Debug\ReversiWnd.obj
+.\Debug\StdAfx.obj
+.\Debug\HuiReversi.res
+]
+Creating command line "link.exe @C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BoardRightView.cpp
+BoardView.cpp
+DlgGetIP.cpp
+DlgRule.cpp
+HuiReversi.cpp
+HuiReversiDoc.cpp
+HuiReversiGetValue.cpp
+HuiReversiMain.cpp
+HuiReversiMove.cpp
+HuiReversiSearch.cpp
+HuiReversiView.cpp
+HuiSearchAlphaBeta.cpp
+MainFrm.cpp
+ReversiWnd.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225E.tmp" with contents
+[
+/nologo /o"Output/HuiReversi.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\BoardRightView.sbr
+.\Debug\BoardView.sbr
+.\Debug\DlgGetIP.sbr
+.\Debug\DlgRule.sbr
+.\Debug\HuiReversi.sbr
+.\Debug\HuiReversiDoc.sbr
+.\Debug\HuiReversiGetValue.sbr
+.\Debug\HuiReversiMain.sbr
+.\Debug\HuiReversiMove.sbr
+.\Debug\HuiReversiSearch.sbr
+.\Debug\HuiReversiView.sbr
+.\Debug\HuiSearchAlphaBeta.sbr
+.\Debug\MainFrm.sbr
+.\Debug\ReversiWnd.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\lihui\LOCALS~1\Temp\RSP225E.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+HuiReversi.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,573 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HuiReversi.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HuiReversi.ico"
+IDR_HUIREVTYPE          ICON    DISCARDABLE     "res\\HuiReversiDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_REVERSI_01          BITMAP  DISCARDABLE     "res\\reversi_01.bmp"
+IDB_REVERSI_02          BITMAP  DISCARDABLE     "res\\reversi_02.bmp"
+IDB_REVERSI_03          BITMAP  DISCARDABLE     "res\\reversi_03.bmp"
+IDB_REVERSI_04          BITMAP  DISCARDABLE     "res\\reversi_04.bmp"
+IDB_REVERSI_05          BITMAP  DISCARDABLE     "res\\reversi_05.bmp"
+IDB_REVERSI_06          BITMAP  DISCARDABLE     "res\\reversi_06.bmp"
+IDB_REVERSI_07          BITMAP  DISCARDABLE     "res\\reversi_07.bmp"
+IDB_REVERSI_08          BITMAP  DISCARDABLE     "res\\reversi_08.bmp"
+IDB_REVERSI_09          BITMAP  DISCARDABLE     "res\\reversi_09.bmp"
+IDB_REVERSI_10          BITMAP  DISCARDABLE     "res\\reversi_10.bmp"
+IDB_REVERSI_11          BITMAP  DISCARDABLE     "res\\reversi_11.bmp"
+IDB_REVERSI_12          BITMAP  DISCARDABLE     "res\\reversi_12.bmp"
+IDB_REVERSI_13          BITMAP  DISCARDABLE     "res\\reversi_13.bmp"
+IDB_REVERSI_14          BITMAP  DISCARDABLE     "res\\reversi_14.bmp"
+IDB_REVERSI_15          BITMAP  DISCARDABLE     "res\\reversi_15.bmp"
+IDB_REVERSI_16          BITMAP  DISCARDABLE     "res\\reversi_16.bmp"
+IDB_REVERSI_17          BITMAP  DISCARDABLE     "res\\reversi_17.bmp"
+IDB_REVERSI_18          BITMAP  DISCARDABLE     "res\\reversi_18.bmp"
+IDB_REVERSI_19          BITMAP  DISCARDABLE     "res\\reversi_19.bmp"
+IDB_REVERSI_20          BITMAP  DISCARDABLE     "res\\reversi_20.bmp"
+IDB_BOARD               BITMAP  DISCARDABLE     "res\\board.bmp"
+IDB_BLACK               BITMAP  DISCARDABLE     "res\\black.bmp"
+IDB_WHITE               BITMAP  DISCARDABLE     "res\\white.bmp"
+IDB_X_BLUE              BITMAP  DISCARDABLE     "res\\X_blue.bmp"
+IDB_X_RED               BITMAP  DISCARDABLE     "res\\X_red.bmp"
+IDB_BLACK_EMPTY         BITMAP  DISCARDABLE     "res\\black_empty.bmp"
+IDB_WHITE_EMPTY         BITMAP  DISCARDABLE     "res\\white_empty.bmp"
+IDB_BOARD_POINT         BITMAP  DISCARDABLE     "res\\point.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_GAME_UNDO
+    BUTTON      ID_GAME_REDO
+    BUTTON      ID_GAME_COMPUTER_MOVE
+    BUTTON      ID_GAME_STOP_SEARCH
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_APP_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "游戏(&F)"
+    BEGIN
+        MENUITEM "新游戏(&N)\tCtrl+N",          ID_FILE_NEW
+        MENUITEM "载入游戏(&O)...\tCtrl+O",     ID_FILE_OPEN
+        MENUITEM "保存游戏(&S)\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "悔棋",                        ID_GAME_UNDO
+        MENUITEM "撤销悔棋",                    ID_GAME_REDO
+        MENUITEM "电脑走棋",                    ID_GAME_COMPUTER_MOVE
+        MENUITEM "停止走棋",                    ID_GAME_STOP_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "设置(&C)"
+    BEGIN
+        MENUITEM "玩家先走(&F)",                IDM_SET_FIRST_PLAYER
+        MENUITEM "电脑先走(&S)",                IDM_SET_FIRST_COM
+        MENUITEM "双人对战(&H)",                IDM_SET_VS_PLAYER
+        MENUITEM "电脑对战(&C)",                IDM_SET_VS_COM
+        MENUITEM "网络对战(&U)",                IDM_SET_VS_NET
+        MENUITEM SEPARATOR
+        MENUITEM "本机IP(&B)",                  IDM_GET_IP
+        MENUITEM "断开连接(&D)",                IDM_SET_DISCONN
+        MENUITEM SEPARATOR
+        MENUITEM "开局模式1",                   IDM_SET_STARTMODE1
+        MENUITEM "开局模式2",                   IDM_SET_STARTMODE2
+        MENUITEM "开局模式3",                   IDM_SET_STARTMODE3
+        MENUITEM "开局模式4",                   IDM_SET_STARTMODE4
+        MENUITEM SEPARATOR
+        POPUP "难度设置"
+        BEGIN
+            MENUITEM "简单",                        IDM_SET_LEVEL1
+            MENUITEM "初级",                        IDM_SET_LEVEL2
+            MENUITEM "中级",                        IDM_SET_LEVEL3
+            MENUITEM "高级",                        IDM_SET_LEVEL4
+            MENUITEM "终极",                        IDM_SET_LEVEL5
+        END
+        MENUITEM "动画效果(&Y)",                IDM_SET_FLASH
+        MENUITEM "电脑提示",                    IDM_SET_PROMPT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "上边标题",                    ID_VIEW_TOP
+        MENUITEM "左边标题",                    ID_VIEW_LEFT
+        MENUITEM SEPARATOR
+        MENUITEM "[&Z]放大",                    ID_VIEW_ZOOMIN
+        MENUITEM "[&M]缩小",                    ID_VIEW_ZOOMOUT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "游戏规则...",                 IDM_HELP_RULE
+        MENUITEM "关于 HuiReversi(&A)...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 205, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HuiReversi"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_LOGO,11,17,21,21,SS_SUNKEN | WS_BORDER
+    LTEXT           "魔羯之辉黑白棋 0.6版",IDC_STATIC,45,10,88,8,SS_NOPREFIX
+    LTEXT           "李辉  版权所有 (C) 2005",IDC_COPYRIGHT,45,25,159,8
+    DEFPUSHBUTTON   "确定",IDOK,148,7,50,14,WS_GROUP
+    CONTROL         "OICQ：    6545823\nE-mail：  lihui_xp@163.com",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,45,37,
+                    114,17
+END
+
+IDD_HUIREVERSI_FORM DIALOG DISCARDABLE  0, 0, 84, 240
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Progress1",IDC_PROTHINK,"msctls_progress32",WS_BORDER,
+                    11,13,64,10
+    EDITTEXT        IDC_CHAT,11,37,64,84,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    COMBOBOX        IDC_MESSAGE,11,133,64,80,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "发送",IDC_SEND,11,151,64,14,WS_DISABLED
+END
+
+IDD_DLG_GETIP DIALOG DISCARDABLE  0, 0, 109, 43
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "本机IP地址"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,30,26,50,14
+    EDITTEXT        IDC_IP,20,7,70,15,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DLG_RULE DIALOG DISCARDABLE  0, 0, 245, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏规则"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,95,124,50,14
+    EDITTEXT        IDC_RULE,7,7,231,110,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HuiReversi Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HuiReversi\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HuiReversi.EXE\0"
+            VALUE "ProductName", "HuiReversi 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_HUIREVERSI_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 77
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_DLG_GETIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 102
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_DLG_RULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "魔羯之辉黑白棋0.6\n\nHuiRev\n黑白棋文件 (*.rvs)\n.rvs\nHuiReversi.Document\n魔羯之辉黑白棋 文档"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "HuiReversi"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "重新开始一局新的游戏\n新建"
+    ID_FILE_OPEN            "载入游戏\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存游戏\n保存"
+    ID_FILE_SAVE_AS         "以一个新文件名保存游戏\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序的版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    IDS_BLACK_WIN           "黑棋胜,净胜%d子!"
+    IDS_WHITE_WIN           "白棋胜,净胜%d子!"
+    IDS_DOGFALL             "平局。"
+    IDS_WHITE_STOP          "白棋没棋可走，黑棋继续。"
+    IDS_BLACK_STOP          "黑棋没棋可走，白棋继续。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOP             "显示或隐藏上边标题\n上边标题"
+    ID_VIEW_LEFT            "显示或隐藏左边标题\n左边标题"
+    ID_VIEW_ZOOMIN          "放大棋盘\n放大"
+    ID_VIEW_ZOOMOUT         "缩小棋盘\n缩小"
+    ID_GAME_UNDO            "悔一步棋\n悔棋"
+    ID_GAME_REDO            "撤销悔棋\n撤销悔棋"
+    ID_GAME_COMPUTER_MOVE   "电脑走棋\n电脑走棋"
+    IDM_SET_STARTMODE1      "开局模式1\n开局模式1"
+    IDM_SET_STARTMODE2      "开局模式2\n开局模式2"
+    IDM_SET_STARTMODE3      "开局模式3\n开局模式3"
+    IDM_SET_STARTMODE4      "开局模式4\n开局模式4"
+    IDM_SET_WJXZ            "玩家先走\n玩家先走"
+    IDM_SET_FIRST_PLAYER    "玩家执黑棋\n玩家先走"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SET_FIRST_COM       "玩家执白棋\n电脑先走"
+    IDM_SET_VS_PLAYER       "双人对战\n双人对战(&H)"
+    IDM_SET_VS_COM          "电脑对战\n电脑对战"
+    IDM_SET_VS_NET          "网络对战\n网络对战"
+    IDM_SET_IP              "查看本机IP地址\n本机IP"
+    IDM_SET_DISCONN         "断开网络连接\n断开连接"
+    IDM_SET_FLASH           "设置动画效果\n动画效果"
+    IDM_SET_LEVEL1          "设置游戏难度为简单\n简单"
+    IDM_SET_LEVEL2          "设置游戏难度为初级\n初级"
+    IDM_SET_LEVEL3          "设置游戏难度为中级\n中级"
+    IDM_SET_LEVEL4          "设置游戏难度为高级\n高级"
+    IDM_SET_LEVEL5          "设置游戏难度为终极\n终极"
+    IDM_HELP_RULE           "查看游戏规则\n游戏规则"
+    IDM_GET_IP              "查看本机IP地址\n本机IP"
+    ID_GAME_STOP_SEARCH     "停止电脑走棋\n停止走棋"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SET_PROMPT          "显示电脑提示的走法\n电脑提示"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\HuiReversi.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
